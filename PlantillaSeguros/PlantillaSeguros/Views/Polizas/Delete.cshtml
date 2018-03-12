@@ -1,0 +1,88 @@
+﻿@model EntityLibrary.Poliza
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>¿Está seguro que desea eliminar esta poliza?</h3>
+<div>
+    <h4>Poliza</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Tipo de Cobertura")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName(" % Cobertura")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cobertura)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Inicio de Vigencia")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inicio_Vigencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Período de cobertura")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_cobertura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Tipo de Riesgo")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_Riesgo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Descripción")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a la lista", "Index")
+        </div>
+    }
+</div>

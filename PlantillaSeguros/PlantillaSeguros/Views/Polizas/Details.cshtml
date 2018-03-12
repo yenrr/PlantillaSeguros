@@ -1,0 +1,82 @@
+﻿@model EntityLibrary.Poliza
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Poliza</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Tipo De Cobertura")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("% Cobertura")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cobertura)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Inicio De Vigencia")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inicio_Vigencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Periodo decobertura")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_cobertura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Tipo De Riesgo")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_Riesgo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Descripción")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Poliza }) |
+    @Html.ActionLink("Volver a la lista", "Index")
+</p>

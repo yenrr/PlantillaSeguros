@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantillaSeguros.Tests", "P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{7CD92A7B-BB1F-4DE9-B0F8-9CC45473BCB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLibrary", "EntityLibrary\EntityLibrary.csproj", "{958B7CE0-D0BA-4DEA-8C6C-19EAA31C5EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern", "RepositoryPattern\RepositoryPattern.csproj", "{088C9E0D-3D80-4214-8D09-14F987323D6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,9 +27,20 @@ Global
 		{01883754-B5DA-4352-B8CB-52D70E8B1EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01883754-B5DA-4352-B8CB-52D70E8B1EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01883754-B5DA-4352-B8CB-52D70E8B1EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958B7CE0-D0BA-4DEA-8C6C-19EAA31C5EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958B7CE0-D0BA-4DEA-8C6C-19EAA31C5EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958B7CE0-D0BA-4DEA-8C6C-19EAA31C5EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958B7CE0-D0BA-4DEA-8C6C-19EAA31C5EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088C9E0D-3D80-4214-8D09-14F987323D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088C9E0D-3D80-4214-8D09-14F987323D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088C9E0D-3D80-4214-8D09-14F987323D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088C9E0D-3D80-4214-8D09-14F987323D6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{958B7CE0-D0BA-4DEA-8C6C-19EAA31C5EA7} = {7CD92A7B-BB1F-4DE9-B0F8-9CC45473BCB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BAF8DBAB-1577-41F2-8962-768CB8926273}
